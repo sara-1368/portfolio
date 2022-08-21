@@ -1,0 +1,28 @@
+:root{
+
+  --selected-theme-background-color:var(--yellow-theme-background-color);
+  --selected-theme-main-color:var(--yellow-theme-main-color);
+  --selected-theme-subtext-color:var(--yellow-theme-subtext-color);
+  --selected-theme-nav-background-color:var( --yellow-theme-nav-background-color);
+
+
+
+  --yellow-theme-background-color:#1d1d1d;
+  --yellow-theme-main-color:#ffdd40;
+  --yellow-theme-subtext-color:#ffffff;
+  --yellow-theme-nav-background-color:#18181818;
+  --font-base:"serif";
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background: var(--selected-theme-background-color);
+  height: 100%;
+}
+#root{
+  height: 100%;
+}

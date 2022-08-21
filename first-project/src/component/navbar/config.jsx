@@ -1,0 +1,26 @@
+export const NavList=[
+{
+    label:"Home",
+    to:"/"
+},
+{
+    label:"Skills",
+    to:"/skills"
+},
+{
+    label:"Contact",
+    to:"/contact"
+},
+{
+    label:"Portfolio",
+    to:"/portfolio"
+},
+{
+    label:"Resume",
+    to:"/resume"
+},
+{
+    label:"About",
+    to:"/about"
+}
+]
