@@ -1,0 +1,19 @@
+
+#particles{
+  position: relative;
+  z-index: -1;
+}
+
+.App{
+  height: 100%;
+  &__navbar-wraper{
+    position:absolute;
+    top: 0;
+    width: 100%;
+  }
+  &__main-content-wraper{
+    height:calc(100% - 80px);
+    margin-top: 80px;
+    
+  }
+}

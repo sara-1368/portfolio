@@ -1,7 +1,7 @@
 
-import './App.css';
+import './App.scss';
 import Navbar from './component/navbar';
-import { Routes, Route ,useLocation} from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './containers/home';
 import About from './containers/about';
 import Contact from './containers/contact';
@@ -26,9 +26,11 @@ function App() {
     <div className="App">
       {locationIsHome && <Particles id="particles" options={particlesConfig} init={particlesInit} />
       }
-
+      <div className="App__navbar-wraper">
       <Navbar />
+      </div>
 
+      <div className="App__main-content-wraper">
       <Routes>
         <Route index path="/" element={<Home />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
@@ -37,6 +39,8 @@ function App() {
         <Route path="/skiils" element={<Skiils />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
       </Routes>
+      </div>
+     
     </div>
   );
 }

@@ -9,7 +9,7 @@ import { useState } from "react";
 const Navbar = () => {
     const [click,setClick]=useState(false)
     return (
-        <div>
+        <div className="App">
             <nav className="navbar">
                 <div className="navbar__container">
                    

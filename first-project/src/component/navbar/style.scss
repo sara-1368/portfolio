@@ -40,12 +40,14 @@
 &__link{
     color: var(--selected-theme-main-color);
     text-decoration: none;
+    font-size: 2rem;
     &::after{
         content: '';
         display: block;
         width: 0;
         height: 3px;
         transition: all 0.5s;
+      
 
 
     }
