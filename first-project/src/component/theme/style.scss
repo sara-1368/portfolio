@@ -1,0 +1,63 @@
+.Theme__wrapper{
+    position: fixed;
+    top:22%;
+    right: -180px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border:1px solid #d5d5d5;
+    transition: all 0.5s ease;
+    width: 180px;
+    &.active{
+        right: 0;
+    }
+    &__icon{
+        width: 40px;
+        height: 40px;
+        left: -40px;
+        position:absolute;
+        top:-1px;
+        background-color: #ffffff;
+        border:1px solid #d5d5d5;
+        border-right: none;
+        cursor:pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            color: var(--selected-theme-main-color);
+            animation: spinAnimate 1.5s linear infinite;
+        }
+        
+    }
+    &__menu{
+        text-align: center;
+        padding: 10px;
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 16px;
+
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:2px;
+            li{
+                list-style-type: none;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@keyframes spinAnimate {
+from{
+    transform: rotate(0);
+}
+to{
+    transform: rotate(360deg);
+}
+}

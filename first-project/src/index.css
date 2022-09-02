@@ -5,13 +5,30 @@
   --selected-theme-subtext-color:var(--yellow-theme-subtext-color);
   --selected-theme-nav-background-color:var( --yellow-theme-nav-background-color);
 
-
-
+  
+/*yellow-theme*/
   --yellow-theme-background-color:#1d1d1d;
   --yellow-theme-main-color:#ffdd40;
   --yellow-theme-subtext-color:#ffffff;
   --yellow-theme-nav-background-color:#18181818;
+/*red-theme*/
+  --red-theme-background-color:#1d1d1d;
+  --red-theme-main-color:#e82a2a;
+  --red-theme-subtext-color:#ffffff;
+  --red-theme-nav-background-color:#18181818;
+/*green-theme*/
+  --green-theme-background-color:#1d1d1d;
+  --green-theme-main-color:#6ac045;
+  --green-theme-subtext-color:#ffffff;
+  --green-theme-nav-background-color:#18181818;
+/*blue-theme*/
+  --blue-theme-background-color:#1d1d1d;
+  --blue-theme-main-color:#5078ff;
+  --blue-theme-subtext-color:#ffffff;
+  --blue-theme-nav-background-color:#18181818;
+
   --font-base:"serif";
+
 }
 *{
   margin:0;

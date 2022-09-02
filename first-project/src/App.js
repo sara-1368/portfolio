@@ -11,8 +11,7 @@ import Resume from './containers/resume';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import particlesConfig from './helper/particlesConfig';
-import Theme from './theme/theme';
-
+import Theme from "./component/theme"
 
 function App() {
   //****particle code */
@@ -27,12 +26,13 @@ function App() {
       {locationIsHome && <Particles id="particles" options={particlesConfig} init={particlesInit} />
       }
 
-<Theme/>
+
       <div className="App__navbar-wraper">
       <Navbar />
       </div>
 
       <div className="App__main-content-wraper">
+      <Theme/>
       <Routes>
         <Route index path="/" element={<Home />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
