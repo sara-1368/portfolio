@@ -15,7 +15,6 @@ const Navbar = () => {
                    
                         <Link className="navbar__container__logo" to={"/"}><FaReact size={30}/></Link>
                 <ul className={click?"navbar__container__menu active" :"navbar__container__menu"}>
-           
                     {
                        
                         NavList.map((item, key) => (
@@ -28,7 +27,6 @@ const Navbar = () => {
                         )
 
                     }
-
                 </ul>
                 <div className="navbar__icon" onClick={()=>setClick(!click)}>{click?<BiX size={50}/>:<FaBars size={30}/>}</div>   
 

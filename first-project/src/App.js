@@ -11,7 +11,7 @@ import Resume from './containers/resume';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import particlesConfig from './helper/particlesConfig';
-
+import Theme from './theme/theme';
 
 
 function App() {
@@ -26,6 +26,8 @@ function App() {
     <div className="App">
       {locationIsHome && <Particles id="particles" options={particlesConfig} init={particlesInit} />
       }
+
+<Theme/>
       <div className="App__navbar-wraper">
       <Navbar />
       </div>
