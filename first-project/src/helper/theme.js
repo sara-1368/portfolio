@@ -3,7 +3,7 @@
 
 const SetTheme = (currentTheme) => {
     // console.log(currentTheme);
-    console.log(document.styleSheets)
+    // console.log(document.styleSheets)
     // console.log("Array.from(document.styleSheets)",Array.from(document.styleSheets).reduce((prev,curr)=>(
     //     console.log(prev,curr)
     // )))
@@ -22,9 +22,9 @@ const SetTheme = (currentTheme) => {
     ), [])
     cssProps.forEach(value=>{
     
-        document.documentElement.style.setProperty(value, `var(${currentTheme}${value.substring(10)}) ` );
+        document.documentElement.style.setProperty(value, `var(--${currentTheme}${value.substring(10)})`);
     })
-    console.log("cssProps", cssProps)
+  
 
 }
 export default SetTheme;
