@@ -1,0 +1,22 @@
+.Wrraper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dashed var(--selected-theme-main-color);
+    h2{
+        color: var(--selected-theme-main-color);
+font-size: 36px;
+font-weight: 700;
+text-transform:capitalize;
+position: relative;
+display: flex;
+flex: 1;
+
+    }
+    span{
+svg{
+color: var(--selected-theme-main-color);
+}
+    }
+}

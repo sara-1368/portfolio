@@ -1,8 +1,10 @@
-import React from "react"
+import React from "react";
+import {RiContactsFill} from "react-icons/ri";
+import Header from "../../component/headerContent";
 const Contact = () => {
     return (
-        <div>
-            Contact
+        <div className="Contact" id="Contact">
+             <Header headerText="Contact Me" Icon={<RiContactsFill size={40}/>}/>
         </div>
     )
 }

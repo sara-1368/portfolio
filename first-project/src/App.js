@@ -5,7 +5,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './containers/home';
 import About from './containers/about';
 import Contact from './containers/contact';
-import Skiils from './containers/skills';
+import Skills from './containers/skills';
 import Portfolio from './containers/portfolio';
 import Resume from './containers/resume';
 import Particles from 'react-tsparticles';
@@ -32,13 +32,14 @@ function App() {
       </div>
 
       <div className="App__main-content-wraper">
+        
       <Theme/>
       <Routes>
         <Route index path="/" element={<Home />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/skiils" element={<Skiils />}></Route>
+        <Route path="/skills" element={<Skills />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
       </Routes>
       </div>

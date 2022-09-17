@@ -1,9 +1,12 @@
 import React from "react"
-const Skiils = () => {
+import Header from "../../component/headerContent";
+import {GiSkills} from "react-icons/gi"
+const Skills = () => {
     return (
-        <div>
-            Skiils
+        <div className="Skill" id="Skill">
+   
+           <Header headerText="My Skills" Icon={<GiSkills size={40}/>}/>
         </div>
     )
 }
-export default Skiils;
+export default Skills;
